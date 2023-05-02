@@ -1,5 +1,18 @@
+// MAIN CODE FOR FINAL PROJECT IN ECEN 398
+// Written by Andre Tharp and Evan Cornwell
+// 5/2/23
+// epic
+//
+// This code will implement a 3-band equalizer on the pingora2
+// MCU
+
+
 /** Includes **/
 #include <MemoryMap.h>
+
+#include <lowBand.h>
+#include <midBand.h>
+#include <highBand.h>
 
 
 
@@ -35,9 +48,10 @@ int main()
 
 
 /** Interrupt Service Routines **/
-/*
-void ISR_name()
+
+
+void ()
 {
 
 }
-*/
+
