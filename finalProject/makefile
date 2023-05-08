@@ -7,7 +7,7 @@ SRC_SOURCES	= main.c
 LIB_SOURCES	= start.S irq.c
 EXTENSIONS	= im
 
-USER_DEFINES	= 
+USER_DEFINES	= -D RedefinedStackPointerInit=0x11000
 
 # Chip Global Libraries and Linker Script
 LIB_DIR		= ../lib
