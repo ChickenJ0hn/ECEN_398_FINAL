@@ -25,6 +25,7 @@
 /** Global Variables **/
 uint16_t* ADC_DMA_PING_BUFFER = (uint16_t*)0x11000;
 uint16_t* ADC_DMA_PONG_BUFFER = (uint16_t*)0x11400;
+// TODO: change thes in the makefile
 
 
 
@@ -54,8 +55,8 @@ int main()
 		// | ADCCIE
 		// | ADCBFIE
 		// | ADCSC 
-		| ADCDAL 
-		| ADCREF_LSB // hmm? 
+		| ADCDAL
+		| ADCREF // hmm? 
 		| ADCCDIV_4
 		// | ADCRG
 		// | ADCTE
@@ -68,13 +69,13 @@ int main()
 	// calculated ADC0FS to be = 2
 	ADC0FS = 2;
 	// max buffer size
-	ADC0HBS = 0XFF;
+	ADC0HBS = 127;
 
 	// need to change stack start location???
 
 	// ADC0VAL needs to be stored in da buffers!
 
-
+	// send audio straight through here!
 
 
 
